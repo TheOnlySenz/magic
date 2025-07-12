@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🌸 عيد ميلاد سعيد يا Dalya! 🌙</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comfortaa', sans-serif;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #introScreen, #mainContent {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      transition: opacity 1s ease;
+    }
+
+    #introScreen {
+      background: linear-gradient(135deg, #000000, #111111);
+      color: #0ff;
+    }
+
+    #introScreen h1 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    }
+
+    #surpriseBtn {
+      padding: 16px 32px;
+      font-size: 1.2rem;
+      background: transparent;
+      border: 2px solid #0ff;
+      border-radius: 30px;
+      color: #0ff;
+      cursor: pointer;
+      font-family: 'Comfortaa', sans-serif;
+      box-shadow: 0 0 20px #0ff;
+      transition: all 0.3s ease;
+    }
+
+    #surpriseBtn:hover {
+      background: #0ff;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    #mainContent {
+      display: none;
+      background: linear-gradient(120deg, #ff99cc 0%, #ff66a3 30%, #b266b2 70%, #6a5acd 100%);
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #ffffff, #ffe6f2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 8px #fff, 0 0 15px #ffe6f2;
+      animation: pulseGlow 3s infinite;
+    }
+
+    .message {
+      margin-bottom: 20px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .anime-gif {
+      width: 140px;
+      margin: 10px;
+      border: 2px solid #fff;
+      border-radius: 12px;
+      animation: float 6s ease-in-out infinite alternate;
+    }
+
+    .anime-quotes {
+      margin-top: 20px;
+      font-style: italic;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @keyframes pulseGlow {
+      0% { text-shadow: 0 0 8px #fff, 0 0 15px #ffe6f2; }
+      50% { text-shadow: 0 0 15px #fff, 0 0 30px #ffe6f2; }
+      100% { text-shadow: 0 0 8px #fff, 0 0 15px #ffe6f2; }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-15px); }
+    }
+
+    .petal, .sparkle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    .petal {
+      width: 15px;
+      height: 15px;
+      background: #ffe6f2;
+      box-shadow: 0 0 5px rgba(255, 182, 193, 0.7);
+      animation: fall 12s linear infinite;
+    }
+
+    .sparkle {
+      width: 5px;
+      height: 5px;
+      background: white;
+      animation: twinkle 8s linear infinite;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-10%) rotate(0deg); opacity: 0.9; }
+      100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+    }
+
+    @keyframes twinkle {
+      0% { transform: translateY(-10%) scale(1); opacity: 0.5; }
+      50% { opacity: 1; }
+      100% { transform: translateY(110vh) scale(1.2); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Intro screen -->
+  <div id="introScreen">
+    <h1>🎉 Ready for a surprise Dalya? 🎉</h1>
+    <button id="surpriseBtn">💖 Tap for a Surprise 💖</button>
+  </div>
+
+  <!-- Main content -->
+  <div id="mainContent">
+    <h1>🌸 عيد ميلاد سعيد يا Dalya! 🌙</h1>
+    <div class="message">
+      <p>Inshallah this year brings you everything your heart dreams of 🤍✨</p>
+      <p>May your day be as soft as falling petals and as warm as your voice.</p>
+      <p>Happy Birthday sleepyhead 🎂🌙🫶</p>
+    </div>
+    <div>
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTZjMDliOTUyMzVubXp5MXZ5cDdteDhtZXJueHMwYmZyZjZ0cGw4MjJ0eGZmcDUxOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2XLoAphEiufV6/giphy.gif" alt="Tokyo Ghoul Kaneki Mask" class="anime-gif" />
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyZHZ6ZDhqMGc5ajdoOTVoeWt6amJiOTI4bDJzY2R5eTJ0bnpoamY0aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UgV8Y7bDxsZDCP01eo/giphy.gif" alt="Gojo Satoru JJK" class="anime-gif" />
+      <img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyMTV3NTkxOXMzMGhwajdwdjhwNHl0cXpsa3MyYzdpN2x3NGgzcDNsZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PoCD7s7dhKKx5NdDU6/giphy.gif" alt="Black Clover Asta" class="anime-gif" />
+    </div>
+    <div class="anime-quotes">
+      “It's not the face that makes someone a monster; it's the choices they make.” — Kaneki 🌙<br>
+      “Throughout heaven and earth, I alone am the honored one.” — Gojo 🌀<br>
+      “My magic is never giving up!” — Asta 🍀
+    </div>
+    <audio id="bgm" loop>
+      <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7f1e470d60.mp3?filename=piano-memories-11144.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script>
+    const intro = document.getElementById('introScreen');
+    const main = document.getElementById('mainContent');
+    const surpriseBtn = document.getElementById('surpriseBtn');
+    const bgm = document.getElementById('bgm');
+
+    surpriseBtn.onclick = () => {
+      // ✅ Play immediately to match tap
+      bgm.play().catch(err => {
+        console.log("Autoplay blocked. She may need to tap again.");
+      });
+
+      intro.style.opacity = 0;
+      setTimeout(() => {
+        intro.style.display = 'none';
+        main.style.display = 'flex';
+        main.style.opacity = 0;
+        setTimeout(() => {
+          main.style.opacity = 1;
+          startDecor();
+        }, 50);
+      }, 1000);
+    };
+
+    function startDecor() {
+      for (let i = 0; i < 30; i++) {
+        const petal = document.createElement('div');
+        petal.classList.add('petal');
+        petal.style.left = `${Math.random() * 100}%`;
+        petal.style.top = `-${Math.random() * 100}px`;
+        petal.style.animationDuration = `${8 + Math.random() * 6}s`;
+        petal.style.animationDelay = `${Math.random() * 5}s`;
+        document.body.appendChild(petal);
+      }
+      for (let i = 0; i < 15; i++) {
+        const sparkle = document.createElement('div');
+        sparkle.classList.add('sparkle');
+        sparkle.style.left = `${Math.random() * 100}%`;
+        sparkle.style.top = `-${Math.random() * 100}px`;
+        sparkle.style.animationDuration = `${6 + Math.random() * 4}s`;
+        sparkle.style.animationDelay = `${Math.random() * 5}s`;
+        document.body.appendChild(sparkle);
+      }
+    }
+  </script>
+</body>
+</html>
